@@ -4,7 +4,26 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.title}>Hello! 👋</Text>
+
+      <Text style={styles.name}>Nirmal Fernando</Text>
+
+      <Text style={styles.details}>
+        BSc Computer Science (Hons)
+      </Text>
+
+      <Text style={styles.details}>
+        University of Jaffna
+      </Text>
+
+      <Text style={styles.details}>
+        3rd Year Undergraduate
+      </Text>
+
+      <Text style={styles.details}>
+        Aspiring ML & Computer Vision Engineer
+      </Text>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +35,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
+  },
+
+  title: {
+    fontSize: 24,
+    marginBottom: 15,
+  },
+
+  name: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+
+  details: {
+    fontSize: 16,
+    marginBottom: 6,
+    textAlign: 'center',
   },
 });
+
