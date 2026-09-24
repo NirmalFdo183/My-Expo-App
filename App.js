@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import CustomButton from './components/CustomButton';
 import Counter from './components/Counter';
+import LiveInput from './components/LiveInput';
 
 export default function App() {
   const handlePress = () => { alert('Hello Nirmal! 👋'); };
@@ -11,6 +12,7 @@ export default function App() {
     <View style={styles.container}>
       <CustomButton style={styles.button} title="Click me" onPress = {handlePress}/>
       <Counter/>
+      <LiveInput/>
       <Text style={styles.title}>Hello! 👋</Text>
 
       <Text style={styles.name}>Nirmal Fernando</Text>
