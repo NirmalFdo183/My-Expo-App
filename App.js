@@ -1,9 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import CustomButton from './components/CustomButton';
+import Counter from './components/Counter';
+
 export default function App() {
+  const handlePress = () => { alert('Hello Nirmal! 👋'); };
+
   return (
     <View style={styles.container}>
+      <CustomButton style={styles.button} title="Click me" onPress = {handlePress}/>
+      <Counter/>
       <Text style={styles.title}>Hello! 👋</Text>
 
       <Text style={styles.name}>Nirmal Fernando</Text>
